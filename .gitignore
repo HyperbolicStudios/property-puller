@@ -1,0 +1,9 @@
+# Generated spatial exports
+/oak-bay-sample/
+/vancouver-100m-sample/
+/output/
+
+# Local Python environment and caches
+.venv/
+__pycache__/
+*.pyc

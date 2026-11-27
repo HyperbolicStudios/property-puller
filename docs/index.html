@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BC Parcel Explorer</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="./style.css"></head><body>
+<header><b>BC Parcel Explorer</b><span>Explore ParcelMap BC data</span></header>
+<main><aside><h1>Export parcels</h1><p>Choose a rectangle to download full parcel polygons, including mapped statutory rights of way.</p>
+<button id="draw">Draw a box</button>
+<form id="bounds"><fieldset><legend>Bounding box · decimal degrees</legend><div class="grid">
+<label>West<input id="west" type="number" step="any" required value="-123.0604"></label>
+<label>East<input id="east" type="number" step="any" required value="-123.0575"></label>
+<label>South<input id="south" type="number" step="any" required value="49.2488"></label>
+<label>North<input id="north" type="number" step="any" required value="49.2507"></label></div>
+<button>Apply coordinates</button></fieldset></form>
+<h2>Map legend</h2><ul><li><i class="lot"></i>Lots and other parcels</li><li><i class="interest"></i>Other mapped interests</li><li><i class="srw"></i>Statutory rights of way</li></ul>
+<p id="status" role="status"></p>
+<a id="download" class="download" target="_blank" rel="noopener">Download shapefile (.zip)</a>
+<small><span id="export-crs"></span><br>Source: <a href="https://catalogue.data.gov.bc.ca/dataset/parcelmap-bc-parcel-fabric">Province of British Columbia</a></small></aside>
+<section id="map" aria-label="Interactive parcel selection map"></section></main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="https://unpkg.com/esri-leaflet@3.0.15/dist/esri-leaflet.js"></script><script src="https://cdn.jsdelivr.net/npm/proj4@2.12.1/dist/proj4.js"></script><script src="./app.js"></script></body></html>
