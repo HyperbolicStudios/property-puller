@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BC Parcel Explorer</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="./style.css"></head><body>
-<header><b>BC Parcel Explorer</b><span>Explore ParcelMap BC data</span></header>
+<header><b>BC Parcel Explorer</b><span>Explore <a href="https://maps.ltsa.ca/" target="_blank" rel="noopener">ParcelMap BC</a> data</span></header>
 <main><aside><h1>Export parcels</h1><p>Choose a rectangle to download full parcel polygons, including mapped statutory rights of way.</p>
 <button id="draw">Draw a box</button>
 <form id="bounds"><fieldset><legend>Bounding box · decimal degrees</legend><div class="grid">
@@ -11,7 +11,6 @@
 <label>North<input id="north" type="number" step="any" required value="49.2507"></label></div>
 <button>Apply coordinates</button></fieldset></form>
 <h2>Map legend</h2><ul><li><i class="lot"></i>Lots and other parcels</li><li><i class="interest"></i>Other mapped interests</li><li><i class="srw"></i>Statutory rights of way</li></ul>
-<p>Compare mapped parcels by PID or plan number in <a href="https://maps.ltsa.ca/" target="_blank" rel="noopener">LTSA’s ParcelMap BC viewer</a>.</p>
 <p>Older easements and statutory rights of way may be missing from ParcelMap BC, including from this map and its downloads. Check the property title to confirm which interests are currently registered. <a href="https://ltsa.ca/property-owners/how-can-i/find-information-on-a-title/">LTSA title lookup guide</a></p>
 <p id="status" role="status"></p>
 <a id="download" class="download" target="_blank" rel="noopener">Download shapefile (.zip)</a>
